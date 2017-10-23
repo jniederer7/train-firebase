@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body>
+
+	<div class="jumbotron"><h1 class="text-center"><strong>Train Scheduler</strong></h1></div>
+
+<div class="panel panel-primary">
+	<div class="panel panel-heading">Trains Scheduled</div>
+
+
+	<div class="panel panel-body">
+		<table class="table table-striped" id="trainSchedule">
+		<thead>
+			<tr>
+				<th>Train Name</th>
+				<th>Destination</th>
+				<th>Frequency</th>
+				<th>Next Arrival</th>
+				<th>Minutes Away</th>
+			</tr>
+		</thead>
+	
+		<tbody>
+				
+		</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel panel-heading">Add Train</div>
+<div class="panel panel-body">
+	<form class="form-horizontal">
+		<div class="form-group">
+		Train Name:<br>
+		<input type="text" class="form-control" id="train-name"><br>
+		Destination:<br>
+		<input type="text" class="form-control" id="destination"><br>
+		First Train Time (HH:mm - military time):<br>
+		<input type="text" class="form-control" id="first-time"><br>
+		Frequency (min):<br>
+		<input type="text" class="form-control" id="frequency"><br>
+		<input type="submit" class="btn btn-primary" id="form-submit">
+	</div>
+	</form>
+</div>
+</div>
+
+</body>
+</html>
